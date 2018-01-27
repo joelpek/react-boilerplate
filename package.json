@@ -7,7 +7,8 @@
     "build": "npm run build-server && npm run build-client",
     "build-server": "babel src/server --out-dir ./dist",
     "build-client": "babel src/client --copy-files --out-dir ./dist/public",
-    "start": "node ./dist/index.js"
+    "start": "node ./dist/index.js",
+    "test": "jest ./src"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,15 @@
   },
   "homepage": "https://github.com/joelpek/react-boilerplate#readme",
   "devDependencies": {
-    "@babel/preset-env": "^7.0.0-beta.38",
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^22.1.4"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   }
 }
