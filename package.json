@@ -4,6 +4,7 @@
   "description": "Basic React Boilerplate",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf dist node_modules",
     "build": "webpack",
     "build-babel": "npm run build-babel-server && npm run build-babel-client",
     "build-babel-server": "babel src/server --out-dir ./dist",
