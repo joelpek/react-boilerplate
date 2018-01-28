@@ -4,7 +4,7 @@
   "description": "Basic React Boilerplate",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist node_modules",
+    "clean": "rimraf dist node_modules package-lock.json",
     "build": "webpack",
     "build-babel": "npm run build-babel-server && npm run build-babel-client",
     "build-babel-server": "babel src/server --out-dir ./dist",
@@ -27,10 +27,10 @@
   "homepage": "https://github.com/joelpek/react-boilerplate#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
     "jest": "^22.1.4",
     "webpack-node-externals": "^1.6.0"
   },
